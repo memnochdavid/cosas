@@ -21,10 +21,19 @@ class MainActivity : AppCompatActivity() {
 
 
         val texto=findViewById<TextView>(R.id.texto)
+        val texto2=findViewById<TextView>(R.id.texto)
         val boton=findViewById<Button>(R.id.boton)
+        var cont=0
         boton.setOnClickListener{
-            texto.text="Hola Mundo"
+            if(cont%2==0){
+                texto.text="Hola Mundo"
+                cont++
+            }else{
+                texto.text="Hola Mundo 2"
+                cont++
+            }
         }
+
 
 
 
