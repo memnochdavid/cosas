@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
                 cont++
             }else{
                 texto.text="Hola Mundo 2"
-                cont++
+                cont=cont+1
             }
         }
 
